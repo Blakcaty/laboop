@@ -1,0 +1,1775 @@
+#1.Set the following variables to the corresponding values:
+#my_num to the value 25
+#my_boolean to the value true (note the capitalization!)
+#my_string to the value "Ruby"
+my_num = 25    
+my_boolean = true    
+my_string =  "Ruby"   
+puts my_num
+puts my_boolean
+puts my_string
+#Output:: 25, true,"Ruby"
+
+#1.Set the variable my_num to the value 100, then click the Run button to run your code.
+my_num=100
+puts my_num
+#Output::100
+
+#1.Do a little math practice in the editor. When you’re ready, click Next.
+a=44
+b=32
+puts a*b-100
+#Output::1308
+
+#In the editor, use at least one print statement and at least one puts statement. You can print out any strings you like! 
+print "Hello,Ruby"
+puts 23
+#Output:: Hello,Ruby23
+
+#1.Call the .length method on your name (remember to use quotes around your name). puts the answer to the console if you want to see the value.
+puts "Ivanna".length
+#Output: 6
+
+#Call the .reverse method on your name. Don’t forget those quotation marks around your name to make it a string! puts the answer to the console if you want to see the value.
+puts "Ivanna".reverse
+#Output: annavI
+
+#Call .upcase on your name to make your name ALL CAPS and use puts to print it to the screen, On the next line, call .downcase to make your name all lower case. Make sure to use puts so you can see it printed out!
+puts "ivanna".upcase
+puts"IVANNA".downcase
+#Output:IVANNA
+#ivanna
+
+#Create a variable name in the editor and set it equal to your name as a string (between quotes, like this: "Eric"). Your string can be capitalized, but name should be all lower case!
+name="Ivanna"
+
+#In the editor, set the variables: sum equal to 13 + 379, product equal to 923 * 15, quotient equal to 13209 / 17, Print each variable to the console using puts if you want to see the results.
+=begin
+In the editor, set the variables:
+sum equal to 13 + 379
+product equal to 923 * 15
+quotient equal to 13209 / 17
+=end
+sum= 13+379
+product = 923*15
+quotient = 13209 / 17
+
+#Declare a variable name and set it equal to a string containing your name. Call .downcase on your name to make it all lower case, call .reverse on your lowercase name to make it backwards, then call .upcase on your backwards name to make it ALL CAPS.
+puts "Ivanna".downcase.reverse.upcase
+#Output:ANNAVI
+
+#print the question "What's your first name?" to the screen. Feel free to peek back at the first exercise if you need a syntax reminder.
+print "What's your first name?"
+#Output:What's your first name?
+
+#Declare a variable first_name and set it equal to gets.chomp.
+first_name=gets.chomp
+#Output:{ }
+
+#Add print prompts, variables, and gets.chomps for the user’s last name, city, and state/province. Use last_name as the variable for the user’s last name, city for their city, and state for their state or province.
+print "What’s your first name? "
+first_name = gets.chomp
+print “what’s your last name?”
+last_name = gets.chomp
+print “what city were you born?”
+city = gets.chomp
+print “what state were you born?”
+state = gets.chomp
+
+#Let’s use this syntax to print out the values of first_name, last_name, city, and state using #{} syntax.
+first_name = "Ivanna"
+last_name = "Hustii"
+print "My name #{first_name} #{last_name}"
+#Output: My name Ivanna Hustii
+
+#After each variable assignment: first_name, last_name, and city add the .capitalize! method.For state use the .upcase! method.Press Run to test your code. Don’t forget to enter your answers in the console!
+first_name.capitalize!
+last_name = "Hustii"
+last_name.capitalize!
+city = "Irshava"
+state.upcase!
+puts "#{first_name} #{last_name} lives in #{city}"
+#Output:Ivanna Hustii lives in Irshava,
+
+#Write your own if statement in the editor. It can take any expression you want (even just true!), but it should evaluate to true. When it does, it should print a string of your choice to the console (using print or puts).
+x = 10
+if x > 5
+  puts "x is greater than 5"
+end
+#Output:x is greater than 5
+
+#Try it yourself in the editor! Use any expression you like in your if/else statement, but make sure both branches print a string of your choice to the console.
+number = rand(1..10)
+
+if number.even?
+  puts "#{number} is an even number"
+else
+  puts "#{number} is an odd number"
+end
+#Output:3 is an odd number
+
+#Add an elsif block to your if/else statement in the editor.
+number = -3
+
+if number > 0
+  puts "#{number} is a positive number"
+elsif number == 0
+  puts "#{number} is zero"
+else
+  puts "#{number} is a negative number"
+end
+#Output:-3 is a negative number
+
+#We’ve started you off in the editor. Replace the ___s with the correct unless statement code so your program prints out "I'm writing Ruby programs!"
+hungry = false
+
+unless hungry
+  puts "I'm writing Ruby programs!"
+else
+  puts "Time to eat!"
+end
+#Output:I'm writing Ruby programs!
+
+#We’ve got two variables in the editor: is_true and is_false. Replace the __ with == or != to make is_true evaluate to true and is_false evaluate to false.
+is_true = 2!= 3
+is_false = 2 == 3
+
+#We’ve set up a few variables in the editor. We want them all to evaluate to true. Your job: replace the __s with <, <=, >, or >= to make the expression for each variable true!
+test_1 = 17 >16
+test_2 = 21 <30
+test_3 = 9<=9
+test_4 = -11 <4
+
+#Let’s practice a bit with &&. Check out the boolean expressions and set each variable to true or false depending on what value you expect the expression to return.
+# boolean_1 = 77 < 78 && 77 < 77
+boolean_1 = false
+# boolean_2 = true && 100 >= 100
+boolean_2 = true
+# boolean_3 = 2**3 == 8 && 3**2 == 9
+boolean_3 = true
+
+#Set each variable to true or false depending on what value you expect the expression to return.
+# boolean_1 = 2**3 != 3**2 || true
+boolean_1 = true
+# boolean_2 = false || -10 > -9
+boolean_2 = false
+# boolean_3 = false || false
+boolean_3 = false
+
+#Set each variable to true or false depending on what value you expect the expression to return.
+# boolean_1 = !true
+boolean_1 = false
+# boolean_2 = !true && !true
+boolean_2 = false
+# boolean_3 = !(700 / 10 == 70)
+boolean_3 = false
+
+#Last one! Set each variable to true or false depending on what value you expect the expression to return.
+boolean_1 = (3 < 4 || false) && (false || true)
+boolean_1 = true
+# boolean_2 = !true && (!true || 100 != 5**2)
+boolean_2 = false
+# boolean_3 = true || !(true || false)
+boolean_3 = true
+
+#Create an if/else statement in the editor. Make sure to include at least one elsif. Each branch of the statement should print something to the console.
+number = 5
+
+if number < 5
+  puts "The number is less than 5"
+elsif number > 5
+  puts "The number is greater than 5"
+else
+  puts "The number is equal to 5"
+end
+#Output:The number is equal to 5
+
+#Create an unless statement in the editor. The statement should print something to the console.
+flag = false
+unless flag
+  puts "The flag is not true"
+end
+#Output:The flag is not true
+
+#We’re letting you know what value (true or false) we want each variable to have, and your job is to add an expression that evaluates to the correct value using comparators.
+# test_1 should be false
+test_1 = 5 > 10 || 2 < 1
+# test_2 should be false
+test_2 = !(3 == 3) && (4 < 5)
+# test_3 should be true
+test_3 = "hello".length == 5 && 3.0 == 3
+
+#The code in the editor indicates what value (true or false) we want each variable to have, and your job is to add an expression that evaluates to the correct value using boolean operators (&&, ||, or !). # test_1 should be true
+# test_1 should be true
+test_1 = (2 + 2 == 4) && (5 < 6 || 7 > 8)
+# test_2 = should be true
+test_2 = !(3 == 4) || (4 >= 4 && !(4 < 4))
+# test_3 = should be false
+test_3 = (true && false) && !(false || false)
+
+#Use print to ask the user for input.Declare a variable called user_input and set it equal to the user’s input using gets.chomp.
+print "Please enter your name: "
+user_input = gets.chomp
+#Output:Please enter your name
+
+#Call the .downcase! method on user_input. Make sure to include the ! so that the user’s string is modified in-place; otherwise, Ruby will create a copy of user_input and modify that instead.After running the code, make sure to enter a string in the terminal.
+rint "Please enter a string: "
+user_input = gets.chomp
+user_input.downcase!
+#Output:Please enter a string:
+
+#We want to check user_input for the substring "s".Write an if statement in the editor. It should check to see if user_input includes "s".For now, print a string of your choice to the console if it finds "s".After running the code, make sure to enter a string in the terminal.
+print "Please enter a string: "
+user_input = gets.chomp.downcase!
+
+if user_input.include?("s")
+  puts "Your input includes the letter 's'!"
+end
+#Output:Please enter a string: Sunshine Your input includes the letter 's'!
+print "Please enter a string: "
+user_input = gets.chomp.downcase!
+if user_input.include?("s")
+  user_input.gsub!(/s/, "th")
+end
+puts user_input
+# dathddf
+
+#Add an else statement that displays a string to the user to let them know if there are no “s”s in their string.
+print "Please enter a string: "
+user_input = gets.chomp
+user_input.downcase!
+
+if user_input.include?("s")
+  user_input.gsub!(/s/, "th")
+  puts user_input
+else
+  puts "No 's's found in your string!"
+end
+#Output:Please enter a string: Dsfdv  dthfdv
+
+#Add a puts statement that uses string interpolation to show the user their transformed string.
+puts "Your transformed string is: #{user_input}"
+#Output:Your transformed string is: dthfdv
+
+#The while loop in the editor is currently an infinite loop. Correct it so it will end! 
+= 0
+while i < 5
+  puts i
+  i=i+1
+end
+
+#On line 2, fill in the __ blank so that the loop breaks when counter is greater than 10.On line 5, increment counter like we do in the example above.
+counter = 1
+until counter > 10
+  puts counter
+  # Add code to update 'counter' here!
+  counter += 1
+end
+
+#The loop from the first exercise is in the editor. Rewrite it using the appropriate assignment operator.
+counter = 1
+while counter < 11
+puts counter
+counter += 1
+end
+=begin
+2
+3
+4
+5
+6
+7
+8
+9
+10
+=end
+
+#Update the for loop in the editor in two ways:Make it print the numbers 1 to 15, including 15.Change it to use .. instead of ....
+for num in 1..15
+  puts num
+end
+=begin Output:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+=end
+
+#Write a for loop that puts the numbers 1 to 20, including 20, using either .. or .... Check Hint if you need a syntax refresher.
+for i in 1..20 do
+  puts i
+end
+
+#Replace the ___s in the editor with the appropriate keywords. Check the Hint if you need help!
+i = 20
+until i <= 0
+  i -= 1
+  print "#{i}"
+end
+#Outpud:191817161514131211109876543210
+
+#Add a line to your loop before your print statement. Use the next keyword so that you skip to the next iteration if the number i is odd.Use the example above for help, but remember that the example above skips even numbers.
+i = 20
+loop do
+  i -= 1
+  next if i % 2 != 0
+  print "#{i}"
+  break if i <= 0
+end
+#Output:181614121086420
+
+#Create a variable called my_array and set it equal to the numbers 1 through 5, inclusive, in order.
+my_array = [1, 2, 3, 4, 5]
+
+#Use the .each method on the odds array to print out double the value of each item of the array. In other words, multiply each item by 2.Make sure to use print rather than puts, so your output appears on one line.
+odds = [1, 3, 5, 7, 9]
+odds.each do |num|
+  print num * 2
+end
+#Ouput:26101418
+
+#Use the .times operator to print out a string of your choice any number of times you like.
+1.times do
+  puts "Hello, world!"
+end
+#Outpud:Hello, world!
+
+#Use a while loop to print out the numbers 1 through 50, inclusive. While the example above counts down, you will want to count up.Use print rather than puts, and don’t forget to increment your variable
+i = 1
+i = 1
+while i <= 50 do
+  print i
+  i += 1
+end
+#Outpud:1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950 
+
+#Now rewrite your while loop using until. You still want to print out the numbers 1 through 50, inclusive.
+i = 1
+until i > 50
+  print i
+  i += 1
+end
+#Outpud:1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950 
+
+#Now print out the numbers from 1 to 50 inclusive, using a for loop instead of an until loop
+for i in 1..50
+  print "#{i} "
+end
+
+#Use the loop iterator to print out the string "Ruby!" 30 times.
+i = 0
+loop do
+  print "¡Ruby!"
+  i += 1
+  break if i > 29
+end
+
+#Use the .times iterator to print "Ruby!" to the console 30 times. Hit Run to see the majesty of your code and complete this lesson!
+30.times do
+  print "Ruby!"
+end
+
+#Use puts to prompt the user for input two times. For the first puts, declare a variable called text and set it equal to the user’s input via gets.chomp.For the second puts, declare a variable called redact and set it equal to the user’s input using gets.chomp.
+puts "Please enter some text:"
+text = gets.chomp
+puts "Please enter the word to redact:"
+redact = gets.chomp
+
+#Declare a variable called words and set it equal to the result of calling the .split method on text. Pass .split a space (" ") to use as a delimiter so that we get an array made up of the words from text.
+puts "Enter some text:"
+text = gets.chomp
+puts "Enter words to redact:"
+redact = gets.chomp
+words = text.split(" ")
+print words
+
+#Let’s start simple: write an .each loop that iterates through words and just prints out each word it finds.
+words.each do |word|
+  puts word
+end
+
+#Add an if/else statement inside your .each.if the current word equals the word to be redacted, then print "REDACTED " with that extra space. Otherwise (else), print word + " ".The extra space in both cases prevents the words from running together.
+words.each do |word|
+  if word == redact
+    print "REDACTED "
+  else
+    print word + " "
+  end
+end
+
+#Declare a variable, my_array, in the editor, and set it equal to an array of your choice. Check the Hint if you need a syntax refresher.
+my_array = [1, "hello", true, "world", 2.5]
+
+#Use square bracket notation to print the third value of demo_array to the console.
+demo_array = [100, 200, 300, 400, 500]
+print demo_array[2] 
+
+#Create a new array called string_array. Make it an array of… strings!
+string_array = ["apple", "banana", "cherry", "date", "elderberry"]
+
+#Create your own two-dimensional array called my_2d_array in the editor. The elements of the inner array(s) can be anything you like: numbers, strings, booleans, and so on
+my_2d_array = [
+  ["apple", "banana", "cherry"],
+  [1, 2, 3],
+  [true, false, true]
+]
+#Use Hash.new to create a new hash called pets. Hash must be capitalized, or Ruby won’t know what you’re talking about!
+pets = Hash.new
+
+#Add a pet to your pets hash. It can be any key-value pair you like!
+pets = Hash.new
+pets["dog"] = "Ralf"
+
+#Access the key-value pair you added to pets, just like step 2 in the example above.Use puts to print that value to the console.
+puts pets["dog"]
+
+#Use the .each iterator to puts out each element of the languages array.Make sure to use puts instead of print, so each element is on its own line.
+languages = ["Ruby", "JavaScript", "Python", "Java", "C++"]
+languages.each do |language|
+  puts language
+end
+
+#Puts out every element inside the sub-arrays inside s.Iterate through .each element in the s array. Call the elements sub_array.Then iterate through .each sub_array and puts out their items.
+s = [["ham", "swiss"], ["turkey", "cheddar"], ["roast beef", "gruyere"]]
+puts s[0][1]
+s.each do |sub_array|
+  sub_array.each do |item|
+    puts item
+  end
+end
+
+#Use .each to iterate over the secret_identities hash.Use puts to print each key-value pair, separated by a colon and a space (:), to the console, just like the example above.
+secret_identities = {
+  "The Batman" => "Bruce Wayne",
+  "Superman" => "Clark Kent",
+  "Wonder Woman" => "Diana Prince",
+  "Freakazoid" => "Dexter Douglas"
+}
+  
+secret_identities.each do |superhero, identity|
+  puts "#{superhero}: #{identity}"
+end
+
+#reate your own multidimensional array called my_array in the editor. The elements of the innermost array can be anything you like: numbers, strings, booleans, and so on.
+my_array = [["spider", "Deadly"], [1,3,4]]
+
+#Create a hash called my_hash in the editor.
+my_hash = { 
+  "dino" => 0.12,
+  "banana" => 0.23,
+  "kiwi" => 1.42
+}
+
+#Iterate through .each key/value pair in lunch_order.Please puts out the value of each pair (just the value, not the key).
+lunch_order = {
+  "Ryan" => "wonton soup",
+  "Eric" => "hamburger",
+  "Jimmy" => "sandwich",
+  "Sasha" => "salad",
+  "Cole" => "taco"
+}
+
+lunch_order.each { |name, food| puts food }
+
+#Use a puts statement to prompt the user for input. Use gets.chomp to save this input to a variable called text.
+puts "Text please: "
+text = gets.chomp
+words = text.split(" ")
+frequencies = Hash.new(0)
+words.each { |word| frequencies[word] += 1 }
+frequencies = frequencies.sort_by {|a, b| b }
+frequencies.reverse!
+frequencies.each { |word, frequency| puts word + " " + frequency.to_s }
+
+#Declare a variable called words and set it equal to the result of calling .split on text.
+puts "Enter some text" 
+text = gets.chomp      
+words = text.split 
+
+#In the example above, we create a new, empty hash h that has a default value of "nothing here".
+#Then we print out {}, the value of h, just to show that h really is empty.
+#Then we print out nothing here as we try to access the value stored by the key "kitty"
+puts "Enter some text" 
+text = gets.chomp     
+words = text.split 
+frequencies = Hash.new(0)
+
+#Use .each to iterate over the words array.For each word we find, assume that the word itself is a key in frequencies and increment its value by 1.This is why our default is 0. The first time we find the word, it will have a default value of 0 that we can increment by 1.
+puts "Enter some text"
+text = gets.chomp    
+words = text.split 
+frequencies = Hash.new(0) 
+words.each{|word| frequencies[word] += 1 
+}
+
+#In the example above, we first create a hash called colors that maps color strings to numbers.
+#Then, we sort colors into green, red, and blue, from smallest to largest by count. Just so you know, the .sort_by function returns an array of arrays, but that’s fine for our purposes.
+#Finally, we reverse the array order so that the colors with the largest counts are first.
+puts "Enter some text" 
+text = gets.chomp   
+words = text.split 
+frequencies = Hash.new(0)
+words.each{|word| frequencies[word] += 1 
+}
+frequencies = frequencies.sort_by { |k, v| v } 
+frequencies.reverse! 
+
+#In the example above, we create a hash called fruit that maps names of fruit to the amount that we own.
+#Then, we iterate over .each key/value pair, storing the key as name and the value as count.
+#Finally, we print out the key and value separated by a space. Note that we must first convert the value from a number to a string using .to_s before we can concatenate it.
+puts "Enter some text" 
+text = gets.chomp      
+words = text.split 
+frequencies = Hash.new(0)
+words.each{|word| frequencies[word] += 1 
+}
+frequencies = frequencies.sort_by { |k, v| v } 
+frequencies.reverse! 
+frequencies.each do |word, frequency| 
+    puts word + " " + frequency.to_s  
+end
+
+#We’ve started a method in the editor to the right, but it’s incomplete. Replace the ___s with the correct keywords so the method will work!
+def welcome
+  puts "Welcome to Ruby!"
+end
+def puts_1_to_10 
+  (1..10).each { |i| puts i } 
+end
+puts_1_to_10 
+
+#Create a method, greeting, in the editor. It should use puts to print a greeting to the console.
+def greeting
+  puts "Hello world, welcome!"
+end
+greeting
+
+#We’ve set up a function, array_of_10, in the editor to the right. Call it on line 5!
+ef array_of_10
+    (1..10).to_a
+end
+puts array_of_10
+
+#Call the cubertino method in the editor, passing it an argument of 8.
+def cubertino(n)
+  puts n ** 3
+  end
+  cubertino(8)
+
+  #Define a new method called add that takes two numbers as parameters.Inside the method, return the sum of those numbers.
+  def add(a, b)
+    return a + b
+  end
+  puts add(2, 3)
+
+  #Define a method called greeter that takes a single string parameter, name, and returns a string containing that person’s name.
+  def alphabetize
+  end
+
+  #Update your alphabetize method with two parameters: arr, representing the array to be passed in, and rev, a boolean that defaults to false.
+  def alphabetize(arr, rev=false)
+    return arr.sort!
+end
+numbers = [34,95,36,21,2,0,6,4,-123,123]
+puts alphabetize(numbers)
+
+#In the example above, we create an array called numbers.
+#Then, we reverse the array. Like with .sort!, the exclamation mark means we modify the actual array.
+#Finally, we print out 5, 4, 3, 2, and 1.
+def alphabetize(arr, rev=false)
+  arr.sort!
+  if rev == true
+   arr.reverse!
+  else
+   arr
+end
+end
+numbers = [34, 21, 36, -9, 192,]
+puts alphabetize(numbers)
+
+#Define a method called greeter that takes a single string parameter, name, and returns a string containing that person’s name.
+def greeter(name)
+  return "Hello, #{name}!"
+end
+
+def by_three?(number)
+  if number % 3 == 0
+    return true
+  else
+    return false
+  end
+end
+
+#Currently, the second .each will print out 5 five times (since it will print 5 for each item in the array, and there are five items). Modify the block so it will print each item in the array multiplied by five.
+[1, 2, 3, 4, 5].each { |i| puts i }
+[1, 2, 3, 4, 5].each { |i| puts 5*i }
+
+#Use the .sort! method to sort the values in my_array. Magic, isn’t it?Display my_array in the console.
+my_array = [3, 4, 8, 7, 1, 6, 5, 9, 2]
+my_array.sort!
+puts my_array
+
+#What Ruby method could we call on books in order to sort the list of books alphabetically? Try it out in the editor.
+books = ["Charlie and the Chocolate Factory", "War and Peace", "Utopia", "A Brief History of Time", "A Wrinkle in Time"]
+books.sort!
+puts books
+
+#Use the combined comparison operator to compare book_1 to book_2 (in that order).
+book_1 = "A Wrinkle in Time"
+book_2 = "A Brief History of Time"
+book_1 <=> book_2
+
+#Sort your books in descending order on line 8. Use the example of sorting in ascending order on line 4 as a guide
+books = ["Charlie and the Chocolate Factory", "War and Peace", "Utopia", "A Brief History of Time", "A Wrinkle in Time"]
+books.sort! { |firstBook, secondBook| firstBook <=> secondBook }
+books.sort! { |firstBook, secondBook| secondBook <=> firstBook }
+
+#Create a method, welcome, that puts “Welcome to Ruby!” After defining your method, call it.
+def welcome
+  puts "Welcome to Ruby!"
+end
+welcome
+
+#Change your welcome method definition. Add a single string parameter called name.Remove your puts statement and replace it with return "Hello, #{name}"
+def welcome(name)
+  return "Hello, #{name}!"
+end
+welcome("Ivanna")
+
+#Add a block after .each that multiplies each item by itself and puts the result to the console.
+my_array = [1, 2, 3, 4, 5]
+my_array.each do |num|
+  puts num * num
+end
+
+#Use .sort! to sort the fruits array in descending (that is, reverse) alphabetical order. You can use the combined comparison operator
+fruits = ["orange", "apple", "banana", "pear", "grapes"]
+fruits.sort! do |fruitOne, fruitTwo| 
+  fruitTwo <=> fruitOne
+end
+  
+#Create a hash called my_hash using whichever method you prefer.
+my_hash = { "name" => "Ivanna", "age" => 19, }
+
+#Iterate over the matz hash and print each value to the console using puts.
+matz = { "First name" => "Yukihiro",
+  "Last name" => "Matsumoto",
+  "Age" => 47,
+  "Nationality" => "Japanese",
+  "Nickname" => "Matz"
+}
+matz.each_value do |value|
+  puts value
+end
+
+#Go ahead and try to access a key in creatures that doesn’t exist.
+creatures = { "weasels" => 0,
+  "puppies" => 6,
+  "platypuses" => 3,
+  "canaries" => 1,
+  "Heffalumps" => 7,
+  "Tiggers" => 1
+}
+creatures["birds"]
+
+#In the meantime, create a hash called no_nil_hash and give it any default value other than nil.
+no_nil_hash = Hash.new("default value")
+puts no_nil_hash["non-existent key"]
+
+#Create a regular old variable called my_first_symbol and set it equal to any valid symbol you like!
+my_first_symbol = :dog
+
+#Add at least two more keys to the symbol_hash hash replacing the ______ blanks.
+symbol_hash = {
+  :one => 1,
+  :two => 2,
+  :three => "three",
+}
+
+=begin
+We have an array of strings we’d like to later use as hash keys, but we’d rather they be symbols.
+Create a new variable, symbols, and store an empty array in it.
+Use .each to iterate over the strings array.
+For each s in strings, use .to_sym to convert s to a symbol and use .push to add that new symbol to symbols.
+Print the symbols array.
+Check the hint for a more information on how to use .each and .push.
+=end
+strings = ["HTML", "CSS", "JavaScript", "Python", "Ruby"]
+symbols = []
+strings.each do |s|
+  symbols.push(s.to_sym)
+end
+puts symbols
+
+#Update your code from the last exercise to use .intern instead of .to_sym.
+strings = ["HTML", "CSS", "JavaScript", "Python", "Ruby"]
+symbols = []
+strings.each do |s|
+  symbols.push(s.intern)
+end
+puts symbols
+
+#Create a hash called movies with symbols as keys and strings as values.
+=begin
+Inside your hash, add two key/value pairs.
+The keys should be the names of movies.
+The values should be quick descriptions or reviews.
+=end
+movies = {
+  :the_matrix => "A mind-bending cyberpunk action film.",
+  :forrest_gump => "A heartwarming tale of a simple man's extraordinary life.",
+  :inception => "A mind-bending action film about dreams within dreams.",
+  :the_shawshank_redemption => "A powerful story of hope and friendship in the face of injustice.",
+}
+
+#Update your hash from the previous exercise to use the new 1.9 hash syntax instead of the older hash rocket syntax.
+movies = {
+  the_matrix: "A mind-bending cyberpunk action film.",
+  forrest_gump: "A heartwarming tale of a simple man's extraordinary life.",
+  inception: "A mind-bending action film about dreams within dreams.",
+  the_shawshank_redemption: "A powerful story of hope and friendship in the face of injustice.",
+}
+ #Create a new variable, good_movies, and set it equal to the result of calling .select on movie_ratings, selecting only movies with a rating strictly greater than 3.
+ movie_ratings = {
+  memento: 3,
+  primer: 3.5,
+  the_matrix: 5,
+  truman_show: 4,8  
+  red_dawn: 1.5,
+  skyfall: 4,
+  alex_cross: 2,
+  uhf: 1,
+  lion_king: 3.5
+}
+good_movies = movie_ratings.select { |movie, rating| rating > 3 }
+
+#Go ahead and print out just the titles of our movies using puts.
+movie_ratings.each_key do |title|
+  puts title
+end
+
+#Create a hash and assign it to the variable movies. Put in your favorite movie as the key, with a number rating for the value.Checkpoint 2 Passed
+#2.Prompt the user for input with puts and save that input in a variable called choice.
+#After pressing Run, make sure to enter some text in the console then hit enter to test your code!
+movies = {
+  "The Dark Knight": 9,
+  "Inception": 8,
+  "The Shawshank Redemption": 10
+}
+puts "Please enter your choice:"
+choice = gets.chomp
+
+=begin
+Below your existing code, create a case statement for the choice variable with the following when conditions:
+when "add", please puts "Added!"
+when "update", please puts "Updated!"
+when "display", please puts "Movies!"
+when "delete", please puts "Deleted!"
+Otherwise (i.e. else), please puts "Error!"Don’t forget the end statement after your case/when lines.
+=end
+case choice
+when "add"
+  puts "Added!"
+when "update"
+  puts "Updated!"
+when "display"
+  puts "Movies!"
+when "delete"
+  puts "Deleted!"
+else
+  puts "Error!"
+end
+
+=begin
+Inside your when "add" block, remove the puts "Added!" statement.
+In its place, prompt the user for a movie title. Save the result in a new variable called title. (Your code already has an example of how to do this!)Next, prompt the user for the rating of the movie. Save that in a new variable called rating.
+Add that movie/rating pair to the movies hash and puts a message indicating the pair was added. (No need for to_sym or to_i just yet!)Inside your when "add" block, remove the puts "Added!" statement.
+In its place, prompt the user for a movie title. Save the result in a new variable called title. (Your code already has an example of how to do this!)
+   Next, prompt the user for the rating of the movie. Save that in a new variable called rating.
+ Add that movie/rating pair to the movies hash and puts a message indicating the pair was added. (No need for to_sym or to_i just yet!)
+=end
+movies = {
+  "The Shawshank Redemption" => 9,
+  "The Godfather" => 9,
+  "The Dark Knight" => 8,
+}
+puts "What do you want to do?"
+puts "-- Type 'add' to add a movie."
+puts "-- Type 'update' to update a movie."
+puts "-- Type 'display' to display all movies."
+puts "-- Type 'delete' to delete a movie."
+choice = gets.chomp.downcase
+case choice
+when "add"
+  puts "What movie do you want to add?"
+  title = gets.chomp
+  puts "What rating does the movie have?"
+  rating = gets.chomp
+  
+  movies[title] = rating
+  puts "#{title} has been added with a rating of #{rating}."
+when "update"
+  puts "Updated!"
+when "display"
+  puts "Movies!"
+when "delete"
+  puts "Deleted!"
+else
+  puts "Error!"
+end
+
+#Call .to_sym on your title and .to_i on your rating so that your movie titles are stored as symbols in the hash and the associated ratings are stored as integers.
+movies = {
+  StarWars: 4.8, 
+  Divergent: 4.7
+  }
+
+puts "What would you like to do? "
+
+choice = gets.chomp
+
+case choice
+when "add"
+  puts "What movie would you like to add? "
+  title = gets.chomp.to_sym
+  puts "What rating does the movie have? "
+  rating = gets.chomp.to_i
+  movies[title] = rating
+when "update"
+  puts "Updated!"
+when "display"
+  puts "Movies!"
+when "delete"
+  puts "Deleted!"
+else
+  puts "Error!"
+end
+
+#Add an if/else statement to the add branch of your case. If the movie isn’t already in the hash (that is, if movies[title.to_sym] is nil), it should add the movie/rating pair; otherwise, it should puts that the movie already exists and not add anything to the hash.
+movies = {
+  StarWars: 4.8, 
+  Divergent: 4.7
+  }
+
+puts "What would you like to do? "
+choice = gets.chomp
+case choice
+when "add"
+  puts "What movie would you like to add? "
+  title = gets.chomp
+  if movies[title.to_sym].nil? 
+    puts "What rating does the movie have? "
+    rating = gets.chomp
+    movies[title.to_sym] = rating.to_i
+  else
+    puts "That movie already exists! Its rating is #{movies[title.to_sym]}."
+  end
+when "update"
+  puts "Updated!"
+when "display"
+  puts "Movies!"
+when "delete"
+  puts "Deleted!"
+else
+  puts "Error!"
+end
+
+#Inside your when "update" block, remove the puts "Updated!" statement.
+#Prompt the user for a movie title. Store it in title.
+#if the movies[title] is nil, then the movie is not in the hash. Please puts a string telling the user of their error.
+#Otherwise (else), we need to update the movies hash. Prompt the user for a new rating. Set the movie’s rating to that new value.
+movies = {
+  StarWars: 4.8, 
+  Divergent: 4.7
+  }
+
+puts "What would you like to do? "
+choice = gets.chomp
+case choice
+when "add"
+  puts "What movie would you like to add? "
+  title = gets.chomp
+  if movies[title.to_sym].nil? 
+    puts "What rating does the movie have? "
+    rating = gets.chomp
+    movies[title.to_sym] = rating.to_i
+  else
+    puts "That movie already exists! Its rating is #{movies[title.to_sym]}."
+  end
+when "update"
+  puts "What movie would you like to update? "
+  title = gets.chomp
+  if movies[title.to_sym].nil? 
+    puts "That movie does not exist."
+  else
+    puts "What is the new rating? "
+    rating = gets.chomp
+    movies[title.to_sym] = rating.to_i
+  end
+when "display"
+  puts "Movies!"
+when "delete"
+  puts "Deleted!"
+else
+  puts "Error!"
+end
+
+#First, remove the puts "Movies!" when the user types “display”.
+#Next, iterate through the hash using .each and puts each movie/rating pair. The format should be #{movie}: #{rating}. Make sure to test it out by entering display in the console after running the code!
+movies = {
+  StarWars: 4.8, 
+  Divergent: 4.7
+  }
+
+puts "What would you like to do? "
+choice = gets.chomp
+case choice
+when "add"
+  puts "What movie would you like to add? "
+  title = gets.chomp
+  if movies[title.to_sym].nil? 
+    puts "What rating does the movie have? "
+    rating = gets.chomp
+    movies[title.to_sym] = rating.to_i
+  else
+    puts "That movie already exists! Its rating is #{movies[title.to_sym]}."
+  end
+when "update"
+  puts "What movie would you like to update? "
+  title = gets.chomp
+  if movies[title.to_sym].nil? 
+    puts "That movie does not exist."
+  else
+    puts "What is the new rating? "
+    rating = gets.chomp
+    movies[title.to_sym] = rating.to_i
+  end
+when "display"
+  movies.each do |title, rating| 
+    puts "#{title}: #{rating}"
+  end
+when "delete"
+  puts "Deleted!"
+else
+  puts "Error!"
+end
+
+#Go ahead and remove the puts "Deleted!" when the user types “delete”.Get the title from the user.
+#Include an if/else statement that puts an error if the movie’s not in the hash; if it’s there, use .delete to remove it as shown above. Make sure to test it out!
+movies = {
+  StarWars: 4.8, 
+  Divergent: 4.7
+}
+puts "What would you like to do? "
+choice = gets.chomp
+case choice
+when "add"
+  puts "What movie would you like to add? "
+  title = gets.chomp
+  if movies[title.to_sym].nil? 
+    puts "What rating does the movie have? "
+    rating = gets.chomp
+    movies[title.to_sym] = rating.to_i
+  else
+    puts "That movie already exists! Its rating is #{movies[title.to_sym]}."
+  end
+when "update"
+  puts "What movie would you like to update? "
+  title = gets.chomp
+  if movies[title.to_sym].nil? 
+    puts "That movie does not exist."
+  else
+    puts "What is the new rating? "
+    rating = gets.chomp
+    movies[title.to_sym] = rating.to_i
+  end
+when "display"
+  movies.each do |title, rating| 
+    puts "#{title}: #{rating}"
+  end
+when "delete"
+  puts "What movie would you like to delete? "
+  title = gets.chomp
+  if movies[title.to_sym].nil? 
+    puts "That movie does not exist."
+  else
+    movies.delete(title.to_sym)
+  end
+else
+  puts "Error!"
+end
+
+#Give it a go! Type a one-line if statement in the editor to the right. It can be whatever you like.
+puts "hello" if true
+
+#Go ahead and type a one-line unless statement in the editor to the right. It can be whatever you like.
+puts "Hello" unless false
+
+#Try out a ternary expression in the editor. Feel free to peek at the
+puts 3 < 4 ? "3 is less than 4!" : "3 is not less than 4."
+
+=begin
+We’ve added some code to prompt the user for input.
+Add a case greeting statement (in either style!) to the file. It should do the following:
+When the user types “English”, the program should puts "Hello!"
+When the user types “French”, the program should puts "Bonjour!"
+When the user types “German”, the program should puts "Guten Tag!"
+When the user types “Finnish”, the program should puts "Haloo!"
+Otherwise, the program should puts “I don’t know that language!”
+Once you’re done, make sure to enter some input in the terminal after you’ve hit the “Run” button to test your code.
+=end
+puts "What language do you speak?"
+greeting = gets.chomp
+case greeting
+when "English"
+  puts "Hello!"
+when "French"
+  puts "Bonjour!"
+when "German"
+  puts "Guten Tag!"
+when "Finnish"
+  puts "Haloo!"
+else
+  puts "I don't know that language!"
+end
+
+#Create a variable, favorite_language, and conditionally set it to your favorite programming language.
+favorite_language ||= "Ruby"
+puts favorite_language
+
+#Modify the code in the editor to use an implicit return.
+def multiple_of_three(n)
+  n % 3 == 0 ? "True" : "False"
+end
+
+#Let’s get a little inventive. Write a loop that only puts the even values of my_array. (Bonus points if you use a one-line if!)
+my_array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+my_array.each { |num| puts num unless num % 2 !=0 }
+
+#Use .upto to puts the capital letters "L" through "P".(Make sure to use puts and not print, so each letter is on its own line!)
+"L".upto("P") { |letter| puts letter }
+
+#Rather than checking to see if our age variable is an integer, check to see if it will .respond_to? the .next method. (.next will return the integer immediately following the integer it’s called on, meaning 4.next will return 5.)
+age = 26
+if age.respond_to?(:next)
+  puts age.next
+else
+  puts "Cannot calculate a successor to #{age}!"
+end
+
+#Update the code in the editor to use the concatenation operator instead of .push and +.puts the caption
+alphabet = ["a", "b", "c"]
+alphabet << "d"
+caption = "A giraffe surrounded by "
+caption << "weezards!"
+puts caption
+
+#Remove the concatenation operator and rewrite the code to use #{thing}. You will want to puts one complete string on line 6.
+favorite_things = ["Ruby", "espresso", "candy"]
+puts "A few of my favorite things:"
+favorite_things.each do |thing|
+  puts "I love #{thing}" + "!"
+end
+
+#Refactor the contents of the editor to just one line of code.
+puts "One is less than two!" if 1 < 2
+
+#Refactor the if statement in the editor to use a ternary operator to puts the correct sentence.
+puts 1 < 2 ? "One is less than two!" : "One is not less than two." 
+
+#Refactor the if/elsif/else statement in the editor into a tidy case statement.
+puts "What's your favorite language?"
+language = gets.chomp
+case language
+when "Ruby" then puts "Ruby is great for web apps!"
+when "Python" then puts "Python is great for science."
+when "JavaScript" then puts "JavaScript makes websites awesome."
+when "HTML" then puts "HTML is what websites are made of!"
+when "CSS" then puts "CSS makes websites pretty."
+else
+  puts "I don't know that language!"
+end
+
+#Create a variable called favorite_animal and conditionally assign it to a string containing the name of your favorite animal.
+favorite_animal = nil
+puts favorite_animal
+favorite_animal ||= "dog"
+puts favorite_animal
+
+#Write a method, square, that takes a number as an argument and implicitly returns the square of that number.
+def square(number)
+  number * number
+end
+
+#Let’s finish up by refactoring the for loop on the right to use .times instead.
+3.times {puts "I'm a refactoring master!"}
+
+#Refactor the code in the editor to use single-line ifs and unlesss.
+require 'prime'
+def first_n_primes(n)
+  return "n must be an integer." unless n.is_a? Integer
+  return "n must be greater than 0." if n <= 0
+  Prime.first(n)
+end
+puts first_n_primes(10)
+
+#Find the unnecessary return keyword and remove it.
+require 'prime'  
+def first_n_primes(n)
+  return "n must be an integer." unless n.is_a? Integer
+  return "n must be greater than 0." if n <= 0
+  Prime.first n
+end
+first_n_primes(10)
+
+#Let’s do a little review! Use .times and a block to puts the string “I’m a block!” five times.
+5.times { puts "I'm a block!" }
+
+#We’ve created an array, fibs, and placed the first ten Fibonacci numbers in it.
+#Create a new variable, doubled_fibs, and set it equal to the result of calling fibs.collect. The block you pass to .collect should double each Fibonacci number, similar to the example above.
+#puts doubled_fibs if you want to see the final contents of the array.
+fibs = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+fibs.collect { |num| num ** 2 }
+doubled_fibs = fibs.collect {|x| x * 2}
+
+#Call yield_name with your name as a parameter. Make sure to pass in a block that puts “My name is #{your name here}!”
+def yield_name(name)
+  puts "In the method! Let's yield."
+  yield("Kim")
+  puts "In between the yields!"
+  yield(name)
+  puts "Block complete! Back in the method."
+end
+yield_name("Eric") { |n| puts "My name is #{n}." }
+yield_name("Jamie") { |n| puts "My name is #{n}." }
+
+#Define your own method, double, that accepts a single parameter and yields to a block. Then call it with a block that multiplies the number parameter by 2. You can double any number you like!
+#puts the result in order to see your yield in action!
+def double(number)
+  yield(number * 2)
+end
+double(5) { |result| puts "The result is #{result}." }
+floats = [1.2, 3.45, 0.91, 7.727, 11.42, 482.911]
+round_down = Proc.new { |x| x.floor }
+ints = floats.collect(&round_down)
+print ints
+group_1 = [4.1, 5.5, 3.2, 3.3, 6.1, 3.9, 4.7]
+group_2 = [7.0, 3.8, 6.2, 6.1, 4.4, 4.9, 3.0]
+group_3 = [5.5, 5.1, 3.9, 4.3, 4.9, 3.2, 3.2]
+over_4_feet = Proc.new { |height| height >= 4 }
+can_ride_1 = group_1.select(&over_4_feet)
+can_ride_2 = group_2.select(&over_4_feet)
+can_ride_3 = group_3.select(&over_4_feet)
+puts can_ride_1
+puts can_ride_2
+puts can_ride_3
+
+#Create a method, greeter, that takes no arguments and yields to a block.Create a Proc, phrase, that puts "Hello there!". Pass this to greeter instead of a block. (Don’t forget to pass &phrase instead of just phrase!
+def greeter
+  yield
+end
+phrase = Proc.new { puts "Hello there!" }
+greeter(&phrase)
+
+#Go ahead and create a proc called hi that puts "Hello!", then .call it!
+hi = Proc.new { puts "Hello!" }
+hi.call
+
+#Using the example in the instructions as a guide, use collect or map to create the strings_array from the numbers_array. Each element of strings_array should be the string version of the corresponding element from the numbers_array (that is, it should go ["1", "2", "3"... "10"]).
+numbers_array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+strings_array = numbers_array.map(&:to_s)
+
+#We have an array of strings in the editor, but we want an array of symbols.
+#On line 4, create a new variable called symbolize. In symbolize, store a lambda that takes one parameter and calls .to_sym on that parameter.
+#We then use symbolize with the .collect method to convert the items in strings to symbols!
+strings = ["leonardo", "donatello", "raphael", "michaelangelo"]
+symbolize = lambda {|x| x.to_sym}
+symbols = strings.collect(&symbolize)
+print symbols
+
+#Create a lambda, symbol_filter, that takes one parameter and checks to see if that parameter .is_a? Symbol.
+#Create a new variable called symbols, and store the result of calling my_array.select and passing it your lambda.
+#puts symbols at the end of the file in order to see the final contents of the array
+my_array = ["raindrops", :kettles, "whiskers", :mittens, :packages]
+symbol_filter = lambda { |x| x.is_a? Symbol }
+symbols = my_array.select(&symbol_filter)
+puts symbols
+
+#The odds_n_ends array is full of all sorts of objects, but we only want the integers (numbers without decimal bits).
+#Create a new variable, ints, and store the result of calling odds_n_ends.select method with a block that checks if the element .is_a? Integer.
+#puts ints at the end of the file in order to see the final contents of the array.
+odds_n_ends = [:weezard, 42, "Trady Blix", 3, true, 19, 12.345]
+ints = odds_n_ends.select { |el| el.is_a? Integer }
+puts ints
+ 
+#Create a proc called under_100 that checks if a number it’s passed is less than 100. (We’ll handle passing this proc the .select method in the next exercise—we won’t need to do anything with the ages array just yet.)
+under_100 = Proc.new { |x| x < 100 }
+ages = [23, 101, 7, 104, 11, 94, 100, 121, 101, 70, 44]
+
+#Now we’ll be using the ages array. Create a variable called youngsters and set it equal to calling .select on ages, and pass in your under_100 proc to filter for the ages that are less than one hundred. Remember to pass &under_100 to convert your proc to a block!
+#puts youngsters at the end of the file in order to see the final contents of the array.
+under_100 = Proc.new { |x| x < 100 }
+ages = [23, 101, 7, 104, 11, 94, 100, 121, 101, 70, 44]
+youngsters = ages.select(&under_100)
+puts youngsters
+
+#Create a lambda called first_half that checks if a hash value is less than (that is, earlier in the alphabet than) “M”. (No need to do anything with the crew hash yet.) Make sure to use a capital “M,” since we’ll be checking capitalized names! Because it will be checking a hash, your lambda should include |key, value| instead of just |value|.
+crew = {
+  captain: "Picard",
+  first_officer: "Riker",
+  lt_cdr: "Data",
+  lt: "Worf",
+  ensign: "Ro",
+  counselor: "Troi",
+  chief_engineer: "LaForge",
+  doctor: "Crusher"
+}
+first_half = lambda { |key, value| value < "M" }
+
+#To finish up, let’s go ahead and create a variable called a_to_m and set it equal to calling .select on crew, and pass in your first_half lambda to filter for the names that are before “M” in the alphabet. Remember to pass &first_half to convert your lambda to a block!
+#puts a_to_m at the end of the file in order to see the final contents of the array.
+first_half = lambda { |key, value| value < "M" }
+crew = {
+  captain: "Picard",
+  first_officer: "Riker",
+  lt_cdr: "Data",
+  lt: "Worf",
+  ensign: "Ro",
+  counselor: "Troi",
+  chief_engineer: "LaForge",
+  doctor: "Crusher"
+}
+a_to_m = crew.select(&first_half)
+puts a_to_m
+
+#Create a class called Person in the editor. Don’t put anything between class Person and end just yet.
+class Person
+end
+
+#Go ahead and define an initialize method for your Person class. No need to put anything in the method body just yet.
+class Person
+	def initialize
+  end
+end
+
+#Give your initialize method a single parameter, name. In the body of your method, set @name = name.
+#This tells Ruby that whenever it creates a Person, it has to have a name, and each instance of Person will have its own @name.
+class Person
+	def initialize(name)
+    @name = name
+  end
+end
+
+#Create a variable, matz, and set it equal to calling .new on your Person class. Pass .new the name “Yukihiro” as its only argument.
+matz = Person.new("Yukihiro")
+
+#Take a look at the code to the right. The variable my_variable is inside a class, so it’s not reachable by the puts method outside it. But you can fix this! Use either of the two global variable tricks mentioned above.
+class MyClass
+  $my_variable = "Hello!"
+ end
+ puts $my_variable
+
+ #Add age and profession parameters to the initialize method, then set these equal to instance variables in the body of the method. Use the name/@name example as a guide.
+ class Person
+  def initialize(name, age, profession)
+    @name = name
+    @age = age
+    @profession = profession
+  end
+end
+
+#Let’s do three things:
+#Create a class variable, @@people_count, on line 3, and set it equal to 0.
+#Increment @@people_count on line 8.
+#Return @@people_count on line 13 so that our puts on line 20 will print out the number of people created so far.
+class Person
+  @@people_count = 0
+ def initialize(name)
+    @name = name
+    @@people_count += 1
+  end
+
+  def self.number_of_instances
+  return @@people_count
+  end
+end
+matz = Person.new("Yukihiro")
+dhh = Person.new("David")
+puts "Number of Person instances: #{Person.number_of_instances}"
+
+#We’ve created an Application class in the editor to the right. Create your own class, MyApp, that inherits from Application. No need to put anything inside your class definition just yet!
+class Application
+  def initialize(name)
+    @name = name
+  end
+end
+class MyApp < Application
+end
+
+#Let’s try a more entertaining (if less realistic) example. Create a new class, Dragon, that inherits from Creature. Give your derived class a fight method that overrides Creature‘s; instead of returning “Punch to the chops!”, it should return “Breathes fire!”.
+class Creature
+  def initialize(name)
+    @name = name
+  end
+  
+  def fight
+    return "Punch to the chops!"
+  end
+end
+class Dragon < Creature
+  def fight
+    return "Breathes fire!"
+  end
+end
+
+#We decided we want to do some chops-punching after all! Let’s do two things:
+#Add puts "Instead of breathing fire..." as the first line in our Dragon‘s fight method.
+#Replace the return statement inside Dragon‘s definition of fight with the keyword super. (No need to pass any arguments to super, since Creature‘s fight method doesn’t take any.)
+class Creature
+  def initialize(name)
+    @name = name
+  end
+  
+  def fight
+    return "Punch to the chops!"
+  end
+end
+class Dragon < Creature
+  def fight
+    puts "Instead of breathing fire. . . "
+    super
+  end
+end
+
+#Create a class called Message and give it an initialize method. The initialize method should take two parameters, from and to, and set them to the instance variables @from and @to (respectively). Don’t worry about creating an instance of your class just yet.
+class Message
+  def initialize(from, to)
+    @from = from
+    @to = to
+  end
+end
+
+#Give your Message class a @@messages_sent class variable and set it equal to 0. In the body of your initialize method, increment this value by 1 so that each time a new Message object is created, @@messages_sent will increase by 1. Don’t create any instances of your class just yet!
+class Message
+  @@messages_sent = 0
+  
+  def initialize(from, to)
+    @from = from
+    @to = to
+    @@messages_sent += 1
+  end
+end
+
+#After your class, create a variable called my_message.
+#Create an instance of your Message class using Message.new with whatever from and to arguments you want! Store the result in my_message.
+class Message 
+  @@messages_sent = 0
+  def initialize(from, to)
+    @from = from 
+    @to = to 
+    @@messages_sent +=1 
+  end
+end
+my_message = Message.new("Ian", "Alex")
+
+#Create a second class, Email, that inherits from Message. Give it its own initialize method that takes just one parameter, subject, and has one instance variable, @subject, set equal to subject.
+class Message 
+  @@messages_sent = 0
+  def initialize(from, to)
+    @from = from 
+    @to = to 
+    @@messages_sent +=1 
+  end
+end
+class Email < Message
+  def initialize(subject)
+    @subject = subject
+  end
+end
+my_message = Message.new("Ian", "Alex")
+
+#o finish this lesson, go ahead and remove the subject parameter and @subject instance variable from Email.
+#Pass Email‘s initialize method the same two parameters passed to Message‘s—from and to—and add the super keyword as the only line of code in the body of Email‘s initialize method.
+class Message 
+  @@messages_sent = 0
+  def initialize(from, to)
+    @from = from 
+    @to = to 
+    @@messages_sent +=1 
+  end
+end
+class Email < Message
+  def initialize(from, to)
+    super
+  end
+end
+my_message = Message.new("Ian", "Alex")
+
+#Create a class called Computer and give it an initialize method that takes no parameters. The body of initialize should be empty.
+class Computer
+  def initialize
+  end
+end
+
+#Update initialize to take two parameters, username and password. In the body of initialize, set the instance variables @username and @password (respectively) to these parameters.
+#In your initialize method, you’ll also want to create a @files instance variable and set this to an empty hash. This is so we can keep track of our files later!
+class Computer
+  def initialize(username, password)
+    @username = username
+    @password = password
+    @files = {}
+  end
+end
+
+#Add a class variable called @@users to your Computer class. Set it equal to an empty hash.
+#In your initialize method, set @@users[username] = password so that your @@users hash keeps usernames as keys with each username’s password as the associated value.
+class Computer
+  @@users = {}
+  def initialize(username, password)
+    @username = username
+    @password = password
+    @files = {}
+    @@users[username] = password
+  end
+end
+
+#Inside your Computer class, define a method called create with a single parameter, filename.
+#Inside create, declare a variable called time and set it equal to the current time (using Time.now).
+#Next, inside create, add a new key/value pair to the @files hash. Use the filename key to store the value time.
+#For the final step in create, please puts a message telling the user that a new file was created. Feel free to put in any information you like; the one we used in exercise 1 printed the filename, the username, and the time.
+class Computer
+  @@users = {}
+  def initialize(username, password)
+    @username = username
+    @password = password
+    @files = {}
+    @@users[username] = password
+  end
+  def create(filename)
+    time = Time.now
+    @files[filename] = time
+    puts "A new file #{filename} was created at #{time} by #{@username}."
+  end
+end
+
+#Add a new class method to your Computer class called Computer.get_users. It should have no parameters.
+#Your new Computer.get_users method should return the @@users class variable.
+class Computer
+  @@users = {}
+  def initialize(username, password)
+    @username = username
+    @password = password
+    @files = {}
+    @@users[username] = password
+  end
+  def create(filename)
+    time = Time.now
+    @files[filename] = time
+    puts "#{filename} was created at #{time} by #{@username}. "
+  end
+  def Computer.get_users
+    @@users
+  end
+end
+
+#After your class, create a new instance of Computer and store it in a new variable called my_computer. Feel free to use whatever username and password you like for your arguments!
+class Computer
+  @@users = {}
+  def initialize(username, password)
+    @username = username
+    @password = password
+    @files = {}
+    @@users[username] = password
+  end
+  def create(filename)
+    time = Time.now
+    @files[filename] = time
+    puts "#{filename} was created at #{time} by #{@username}. "
+  end
+ def Computer.get_users
+    @@users
+  end
+end
+my_computer = Computer.new("superUser", "12345")
+
+#First, create a class named Dog.Create a method initialize within your class Dog.Allow your initialize method to accept two parameters, name and breed.Inside your initialize method assign those two parameters to the variables @name and @breed respectively
+class Dog
+  def initialize(name, breed)
+    @name = name
+    @breed = breed
+  end
+end
+
+#For now, let’s add a public method called bark to Dog. The bark method should puts "Woof!".
+class Dog
+  def initialize(name, breed)
+    @name = name
+    @breed = breed
+  end
+
+  def bark
+    puts "Woof!"
+  end
+end
+
+#Add a private method called id to Dog. The id method should create an @id_number instance variable and set it equal to 12345.
+class Dog
+  def initialize(name, breed)
+    @name = name
+    @breed = breed
+    id
+  end
+def bark
+    puts "Woof!"
+  end
+private
+ def id
+    @id_number = 12345
+  end
+end
+
+#We’ve brought back our Person class with a method for getting @name and a method for changing his or her @job. Go ahead and remove the name and job= methods and add an attr_reader for :name and an attr_writer for :job.
+class Person
+  attr_reader :name
+  attr_writer :job
+def initialize(name, job)
+    @name = name
+    @job = job
+  end
+end
+
+#Here we have an attr_reader and an attr_writer for :job. Go ahead and replace these with an attr_accessor!
+class Person
+  attr_accessor:name
+  attr_accessor :job
+  attr_accessor :job
+  
+  def initialize(name, job)
+    @name = name
+    @job = job
+  end
+end
+
+#Create your own module called MyLibrary in the editor to the right. Include a constant called FAVE_BOOK and set it equal to a string naming your favorite book!
+module MyLibrary
+  FAVE_BOOK = "I don`t have favorit book"
+end
+
+#Use the scope resolution operator to puts the value of PI from the Math module to the console.
+puts Math::PI
+
+#Go ahead and require 'date' on line 1 so the code on line 3 will work.
+require 'date'
+puts Date.today
+
+#In our case, we want to use Math::cos but we don’t want to type Math::.
+class Angle
+  include Math
+  attr_accessor :radians
+  
+  def initialize(radians)
+    @radians = radians
+  end
+  
+  def cosine
+    cos(@radians)
+  end
+end
+acute = Angle.new(1)
+acute.cosine
+
+#Create a module, MartialArts.Inside, define a method called swordsman that just puts "I'm a swordsman."
+#On the first line inside Ninja and the first line inside Samurai, include MartialArts to mix this into both the Ninja and Samurai classes, thereby giving them the swordsman method.
+module MartialArts
+  def swordsman
+    puts "I'm a swordsman."
+  end
+end
+class Ninja
+include MartialArts
+  def initialize(clan)
+    @clan = clan
+  end
+end
+class Samurai
+include MartialArts
+  def initialize(shogun)
+    @shogun = shogun
+  end
+end
+
+#We’ve set up an Application class in the editor. Add a public method called print_status to Application that puts "All systems go!". Don’t forget to use the public keyword!
+class Application
+  attr_accessor :status
+  def initialize; end
+  public
+  def print_status
+    puts "All systems go!"
+  end
+end
+
+#Below your public method, add a private method called password that returns the super secret password 12345.
+lass Application
+  attr_accessor :status
+  def initialize; end
+  public
+  def print_status
+    puts "All systems go!"
+  end
+end
+
+#Create your own module called Languages in the editor to the right. Include a constant called FAVE and set it equal to a string naming your favorite programming language!
+module Languages
+  FAVE = "Ruby"
+end
+
+#Finally, let’s include our Languages module in the Master class (on line 6) so that our favorite language gets printed to the console.
+module Languages
+  FAVE = "Ruby"  # This is what you typed before, right? :D
+end
+class Master
+  include Languages
+def initialize; end
+  
+  def victory
+    puts FAVE
+  end
+end
+
+total = Master.new
+total.victory
+
+#Create an Account class in the editor. The :name and :balance attributes should be readable (but not writeable!). The class’ initialize method should take two parameters, name and balance, and the balance parameter should default to 100.
+#Finally, go ahead and store your parameters in instance variables @name and @balance, respectively.
+class Account
+  attr_reader :name, :balance
+  
+  def initialize(name, balance=100)
+    @name = name
+    @balance = balance
+  end
+end
+
+#Add two private methods to your Account class, pin and pin_error.pin should take no arguments and set an instance variable, @pin, equal to the PIN number 1234.
+#pin_error should take no arguments and should simply return the string "Access denied: incorrect PIN."
+class Account
+  attr_reader :name, :balance
+  def initialize(name, balance=100)
+  @name = name
+  @balance = balance
+  pin
+  end
+  private
+  def pin
+  @pin = 1234
+  end
+  def pin_error
+  "Access denied: incorrect PIN."
+  end
+end
+
+#Define a public display_balance method to your Account class. It should take a single parameter, pin_number.
+#The body of your method should check whether the pin_number is equal to pin (the result of calling the private pin method)
+#If it is, display_balance should puts "Balance: $#{@balance}."
+#Otherwise (else), it should puts pin_error (the pin_error message).
+class Account
+  attr_reader :name, :balance
+  def initialize(name, balance=100)
+  @name = name
+  @balance = balance
+  pin
+  end
+  def display_balance(pin_number)
+  if pin_number == pin
+  puts "Balance: $#{@balance}."
+  else
+  puts pin_error
+  end
+  end
+  private
+  def pin
+  @pin = 1234
+  end
+  def pin_error
+  "Access denied: incorrect PIN."
+  end
+end
+
+#Add a public withdraw method to your class that takes two parameters, pin_number and amount. If pin_number matches pin, your method should subtract the amount from the balance and puts "Withdrew #{amount}. New balance: $#{@balance}." Otherwise, it should puts pin_error.
+class Account
+  attr_reader :name
+  attr_reader :balance
+  def initialize(name, balance=100)
+    @name = name
+    @balance = balance
+  end
+   public
+  def display_balance(pin_number)
+    if pin_number == @pin
+      puts "Balance: $#{@balance}."
+    else
+      puts pin_error
+    end
+  end
+  def withdraw(pin_number,amount)
+    if pin_number == @pin
+      @balance -= amount
+      puts "Withdrew #{amount}."
+    else
+      puts pin_error
+    end
+  end
+private
+  def pin
+    @pin = 1234
+  end
+  def pin_error
+    return "Access denied: incorrect PIN."
+  end 
+end
+  
+#Last step: create an instance of your Account class called checking_account. Give it whatever name and starting balance you like!
+class Account
+  attr_reader :name
+  attr_reader :balance
+  def initialize(name, balance=100)
+    @name = name
+    @balance = balance
+  end
+  public
+  def display_balance(pin_number)
+    if pin_number == @pin
+      puts "Balance: $#{@balance}."
+    else
+      puts pin_error
+    end
+  end
+  def withdraw(pin_number,amount)
+    if pin_number == @pin
+      @balance -= amount
+      puts "Withdrew #{amount}."
+    else
+      puts pin_error
+    end
+  end
+private
+  def pin
+    @pin = 1234
+  end
+  def pin_error
+    return "Access denied: incorrect PIN."
+  end 
+end
+checking_account = Account.new("Eric", 1_000_000)
+
